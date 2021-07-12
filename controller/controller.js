@@ -12,9 +12,9 @@ export const sendMail = (req, res) => {
         
         var mailOptions = {
             from : 'wethree0003@gmail.com',
-            to :   'talhashamim001@gmail.com',
-            sub : 'from sksgroups.in',
-            text: req.body.msg + ' from ' + req.body.to + ' email ' + req.body.email,
+            to  :  'enquiry.sksgroups@gmail.com',
+            sub :  'from sksgroups.in',
+            text:   req.body.msg + ' email ' + req.body.email,
         }
 
         transporter.sendMail(mailOptions, function (error,info){
