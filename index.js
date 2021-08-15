@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
 app.use('/sendMail', routers);
 
-const PORT = process.env.PORT || 7000;
+let PORT = process.env.PORT || 7000;
 app.listen(PORT, () => {
     console.log(`listening at http://localhost:${PORT}`)
 })
